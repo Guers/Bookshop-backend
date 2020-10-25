@@ -1,9 +1,10 @@
-package entity;
+package com.bookstore.backend.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 @Entity
@@ -16,6 +17,16 @@ public class Book {
 	private String author;
 	private String picture;
 	private int publicationYear;
+	@ManyToOne
+	private Category category;
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
 
 	public int getBookId() {
 		return bookId;

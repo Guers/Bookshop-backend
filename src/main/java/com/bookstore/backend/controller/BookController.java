@@ -1,4 +1,4 @@
-package controller;
+package com.bookstore.backend.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import entity.Book;
-import service.BookService;
+import com.bookstore.backend.entity.Book;
+import com.bookstore.backend.service.BookService;
 
 @RestController
 public class BookController {

@@ -1,12 +1,12 @@
-package service;
+package com.bookstore.backend.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import entity.Book;
-import repository.BookRepository;
+import com.bookstore.backend.entity.Book;
+import com.bookstore.backend.repository.BookRepository;
 
 @Service
 public class BookService {

@@ -1,4 +1,4 @@
-package entity;
+package com.bookstore.backend.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -67,7 +67,6 @@ public class User {
 	public void setZip(int zip) {
 		this.zip = zip;
 	}
-	
 	
 	
 }
