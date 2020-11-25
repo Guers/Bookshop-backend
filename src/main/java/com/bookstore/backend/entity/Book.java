@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 
 @Entity
 public class Book {
@@ -17,6 +19,8 @@ public class Book {
 	private String author;
 	private String picture;
 	private int publicationYear;
+	
+	@JsonBackReference
 	@ManyToOne
 	private Category category;
 
